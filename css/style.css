@@ -98,6 +98,7 @@ header nav {
     width: 150px;
   }
 
+
   .nav-links.active {
     display: flex;
   }
@@ -120,12 +121,13 @@ header nav {
   .nav-container {
     justify-content: center;
   }
+  
 }
 
 /*main*/
 .centered {
  
-  display:flex
+  text-align: center;
 
 }
 
