@@ -47,7 +47,7 @@ form?.addEventListener("submit", e => {
     msgBox.style.color = "red";
   } else {
     msgBox.textContent = "Message sent successfully!";
-    msgBox.style.color = "green";
+    msgBox.style.color = "purple";
     form.reset();
   }
 });
