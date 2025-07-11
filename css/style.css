@@ -1,0 +1,199 @@
+/*base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #cbc2cb;
+  color: #333;
+  padding-top: 70px;
+  transition: background 0.3s, color 0.3s;
+  
+}
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 10px;
+
+}
+
+/*navbar*/
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #8236b1;
+  color: #090303;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.theme-toggle {
+  background: none;
+
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 2rem;
+
+
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: rgb(5, 2, 2);
+  font-size: 16px;
+}
+
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+/*responsive nav*/
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    left: 1em;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .theme-toggle {
+    position: absolute;
+    
+    right: 1em;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 1em;
+  }
+
+  .nav-container {
+    justify-content: center;
+  }
+}
+
+/*main*/
+.centered {
+ 
+  display:flex
+
+}
+
+.profile-pic {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  border:8px solid rgb(110, 62, 161);
+}
+
+.about, .projects, .contact {
+  padding: 2em;
+}
+
+/*gallery */
+.gallery {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.card {
+  background: #61347d;
+  padding: 1em;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  color: #000;
+}
+
+.gallery .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/*form*/
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+
+
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+
+  padding: 10px;
+  background: #956ab0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #631f8e;
+
+}

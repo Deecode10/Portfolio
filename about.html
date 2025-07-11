@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="menu-toggle" class="hamburger">☰</button>
+       <button id="mode-toggle" class="theme-toggle">🌜</button>
+    </div>
+  </nav>
+</header>
+
+
+  <section class="about">
+    <h2 style="color:blueviolet">About Me..</h2>
+    
+    <p>→ I’m a passionate developer skilled in HTML, CSS, JavaScript, and MERN stack.</p>
+    <h3 style="color:blueviolet">Skills..</h3>
+   <p>→ Css, Html </p>
+   <p>→ JavaScript, React </p>
+   <p> →Figma </p>
+  </section>
+
+  <section class="projects">
+    <h2 style="color:blueviolet">Projects</h2>
+    <div class="filters">
+      <button style="background-color: blueviolet;border-radius: 2px;" data-category="all">All</button>
+      <button style="background-color: blueviolet;border-radius: 2px;" data-category="web">Web</button>
+      <button style="background-color: blueviolet;border-radius: 2px;" data-category="design">Design</button>
+    </div>
+    <div id="project-gallery" class="gallery"></div>
+  </section>
+
+  <script src="js/projects.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
